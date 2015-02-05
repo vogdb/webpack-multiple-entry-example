@@ -1,0 +1,27 @@
+{
+  "name": "webpack-multiple-entry-example-from-cargomedia",
+  "version": "0.1.0",
+  "description": "Put away all these easy introduction examples. Only hardcore.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cargomedia/webpack-multiple-entry-example.git"
+  },
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js"
+  },
+  "author": "cargomedia",
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "underscore": "~1.7.0",
+    "backbone": "~1.1.0"
+  },
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "css-loader": "^0.9.0",
+    "file-loader": "^0.7.2",
+    "image-webpack-loader": "0.0.7",
+    "style-loader": "^0.8.1",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.5.3"
+  }
+}
