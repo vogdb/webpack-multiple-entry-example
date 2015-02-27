@@ -1,6 +1,6 @@
 require(['Module/Abstract'], function(ModuleAbstract) {
 
-  return ModuleAbstract.extend({
+  module.exports = ModuleAbstract.extend({
     /**
      * @param {ModuleAbstract} component
      */
