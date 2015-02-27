@@ -12,7 +12,6 @@
   "author": "cargomedia",
   "dependencies": {
     "jquery": "~2.1.0",
-    "underscore": "~1.7.0",
     "backbone": "~1.1.0"
   },
   "devDependencies": {

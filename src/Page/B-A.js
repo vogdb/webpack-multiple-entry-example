@@ -1,10 +1,8 @@
-require(['./../module-b', './module-clicks'], function(ModuleB) {
+require(['Module/B'], function(Module_B) {
 
-  var ModuleBA = ModuleB.extend({
-    name: 'Module B A'
+  var ModuleBA = Module_B.extend({
+    farewell: 'Module BA tells goodbye you with BBBBBBB and AAAAAA'
   });
 
   (new ModuleBA()).say();
-
 });
-

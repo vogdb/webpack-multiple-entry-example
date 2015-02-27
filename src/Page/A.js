@@ -1,11 +1,8 @@
-require(['backbone', './../module-clicks'], function(Backbone) {
+require(['Module/Abstract', 'SomeLibrary'], function(Module_Abstract, SomeLibrary) {
 
-  var ModuleA = Backbone.View.extend({
-    say: function() {
-      console.log('Module A');
-    }
+  var ModuleA = Module_Abstract.extend({
+    greetings: 'Module A greets you with AAAAAA and ' + SomeLibrary.name
   });
+
   (new ModuleA()).say();
-
 });
-
