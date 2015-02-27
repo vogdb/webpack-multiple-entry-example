@@ -1,7 +1,5 @@
-require.ensure(['backbone', './module-clicks'], function(require) {
+require(['backbone', './module-clicks'], function(Backbone) {
 
-  require('./module-clicks');
-  var Backbone = require('backbone');
   var ModuleA = Backbone.View.extend({
     say: function() {
       console.log('Module A');

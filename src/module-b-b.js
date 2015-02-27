@@ -1,7 +1,4 @@
-require.ensure(['./module-b', './module-clicks'], function(require) {
-
-  require('./module-clicks');
-  var ModuleB = require('./module-b');
+require(['./module-b', './module-clicks'], function(ModuleB) {
 
   var ModuleBB = ModuleB.extend({
     name: 'Module B B'
