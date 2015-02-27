@@ -1,8 +1,8 @@
-require(['Module/Abstract'], function(Module_Abstract) {
+require(['Module/Abstract'], function(ModuleAbstract) {
 
-  return Module_Abstract.extend({
+  return ModuleAbstract.extend({
     /**
-     * @param {Module_Abstract} component
+     * @param {ModuleAbstract} component
      */
     sing: function(component) {
       console.log('Let\'s sing together!');

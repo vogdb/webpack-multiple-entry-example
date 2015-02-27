@@ -1,6 +1,6 @@
-require(['Module/B', 'Component/C'], function(Module_B, ComponentC) {
+require(['Module/B', 'Component/C'], function(ModuleB, ComponentC) {
 
-  var ModuleBB = Module_B.extend({
+  var ModuleBB = ModuleB.extend({
     farewell: 'Module BB tells goodbye you with BBBBBBB and BBBBBBB'
   });
 

@@ -1,6 +1,6 @@
-require(['Module/Abstract', 'SomeLibrary', 'Component/C'], function(Module_Abstract, SomeLibrary, ComponentC) {
+require(['Module/Abstract', 'SomeLibrary', 'Component/C'], function(ModuleAbstract, SomeLibrary, ComponentC) {
 
-  var ModuleA = Module_Abstract.extend({
+  var ModuleA = ModuleAbstract.extend({
     greetings: 'Module A greets you with AAAAAA and ' + SomeLibrary.name
   });
 
