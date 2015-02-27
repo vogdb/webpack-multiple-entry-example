@@ -1,8 +1,8 @@
-require(['Module/B'], function(Module_B) {
+require(['Module/B', 'Component/C'], function(Module_B, ComponentC) {
 
   var ModuleBB = Module_B.extend({
     farewell: 'Module BB tells goodbye you with BBBBBBB and BBBBBBB'
   });
 
-  (new ModuleBB()).say();
+  (new ComponentC()).sing(new ModuleBB());
 });
