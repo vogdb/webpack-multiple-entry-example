@@ -20,14 +20,14 @@ module.exports = {
       'Backbone': 'backbone'
     })
     , new webpack.optimize.CommonsChunkPlugin({
-        name: 'module-b',
-        chunks: ['module-b-a', 'module-b-b']
+        name: 'page-b',
+        chunks: ['page-b-a', 'page-b-b']
         ,children: false
         ,minChunks: 2
     })
     , new webpack.optimize.CommonsChunkPlugin({
         name: 'vendor',
-        chunks: ['module-b', 'module-a']
+        chunks: ['page-b', 'page-a']
         ,children: false
         ,minChunks: 2
     })
