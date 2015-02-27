@@ -1,4 +1,4 @@
-require(['backbone', './module-clicks'], function(Backbone) {
+require(['backbone', './../module-clicks'], function(Backbone) {
 
   var ModuleA = Backbone.View.extend({
     say: function() {

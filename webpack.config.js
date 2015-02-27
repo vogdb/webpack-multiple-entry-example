@@ -6,9 +6,9 @@ module.exports = {
   context: __dirname + "/src",
   entry: {
     vendor: ['jquery', 'underscore', 'backbone'],
-    'module-a': ['./module-a.js'],
-    'module-b-a': ['./module-b-a.js'],
-    'module-b-b': ['./module-b-b.js']
+    'module-a': ['./A.js'],
+    'module-b-a': ['./b-A.js'],
+    'module-b-b': ['./B-B.js']
   },
   plugins: [
     new webpack.ProvidePlugin({
