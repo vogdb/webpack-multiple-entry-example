@@ -1,5 +1,9 @@
 var webpack = require('webpack');
 var path = require('path');
+var rimraf = require('rimraf');
+
+var buildOutputPath = path.join(__dirname, 'build/static');
+rimraf.sync(buildOutputPath);
 
 
 module.exports = {
@@ -33,7 +37,7 @@ module.exports = {
     })
   ],
   output: {
-    path: path.join(__dirname, 'build/static'),
+    path: buildOutputPath,
     filename: '[name].js',
     publicPath: path.join(__dirname, 'build/static/')
   }
