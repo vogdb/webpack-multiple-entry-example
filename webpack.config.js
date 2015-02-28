@@ -9,7 +9,6 @@ rimraf.sync(buildOutputPath);
 module.exports = {
   context: __dirname + "/src",
   entry: {
-    vendor: ['jquery', 'underscore', 'backbone'],
     'page-a': ['Page/A.js'],
     'page-b-a': ['Page/B-A.js'],
     'page-b-b': ['Page/B-B.js']
@@ -24,16 +23,13 @@ module.exports = {
       'Backbone': 'backbone'
     })
     , new webpack.optimize.CommonsChunkPlugin({
-        name: 'page-b',
-        chunks: ['page-b-a', 'page-b-b']
-        ,children: false
-        ,minChunks: 2
+      name: 'page-b',
+      chunks: ['page-b-a', 'page-b-b']
+
     })
     , new webpack.optimize.CommonsChunkPlugin({
-        name: 'vendor',
-        chunks: ['page-b', 'page-a']
-        ,children: false
-        ,minChunks: 2
+      name: 'vendor',
+      chunks: ['page-b', 'page-a']
     })
   ],
   output: {
