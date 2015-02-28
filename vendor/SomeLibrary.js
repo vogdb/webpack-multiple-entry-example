@@ -1,3 +1,3 @@
-define(function() {
-  return {name: 'Some library!'}
+define([], function() {
+  module.exports = function(){return {name: 'Some library!'}};
 });

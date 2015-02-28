@@ -1,4 +1,4 @@
-require(['backbone'], function(backbone) {
+define(['backbone'], function(backbone) {
 
   /**
    * @class ModuleAbstract

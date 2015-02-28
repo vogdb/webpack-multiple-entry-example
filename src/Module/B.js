@@ -1,4 +1,4 @@
-require(['Module/Abstract'], function(ModuleAbstract) {
+define(['Module/Abstract'], function(ModuleAbstract) {
 
   module.exports = ModuleAbstract.extend({
     greetings: 'Module B greets you with BBBBBBB',
