@@ -16,7 +16,7 @@ module.exports = {
     'page-b-b': ['Page/B-B.js']
   },
   resolve: {
-    modulesDirectories: ['vendor', 'src', 'node_modules']
+    modulesDirectories: ['vendor', 'src/js', 'node_modules']
   },
   plugins: [
     new webpack.ProvidePlugin({
