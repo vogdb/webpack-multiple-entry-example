@@ -1,0 +1,2 @@
+- remove ugly relative paths in less files for images.
+- var ExtractTextPlugin = require("extract-text-webpack-plugin"); + less
