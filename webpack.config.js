@@ -9,6 +9,8 @@ rimraf.sync(buildOutputPath);
 module.exports = {
   context: __dirname + "/src",
   entry: {
+    'vendor': ['jquery', 'underscore', 'backbone'],
+    'page-clicks': ['Page/clicks.js'],
     'page-a': ['Page/A.js'],
     'page-b-a': ['Page/B-A.js'],
     'page-b-b': ['Page/B-B.js']
@@ -28,8 +30,12 @@ module.exports = {
 
     })
     , new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
+      name: 'page-module',
       chunks: ['page-b', 'page-a']
+    })
+    , new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      chunks: ['page-clicks', 'page-module']
     })
   ],
   output: {
