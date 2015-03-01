@@ -10,10 +10,7 @@ module.exports = {
   context: __dirname + "/src",
   entry: {
     'vendor': ['jquery', 'underscore', 'backbone'],
-    'page-clicks': ['Page/clicks.js'],
-    'page-a': ['Page/A.js'],
-    'page-b-a': ['Page/B-A.js'],
-    'page-b-b': ['Page/B-B.js']
+    'page-clicks': ['Page/clicks.js']
   },
   resolve: {
     modulesDirectories: ['vendor', 'src/js', 'src/styles', 'node_modules']
@@ -26,12 +23,12 @@ module.exports = {
     })
     , new webpack.optimize.CommonsChunkPlugin({
       name: 'page-b',
-      chunks: ['page-b-a', 'page-b-b']
+      chunks: ['Page/B-A', 'Page/B-B']
 
     })
     , new webpack.optimize.CommonsChunkPlugin({
       name: 'page-module',
-      chunks: ['page-b', 'page-a']
+      chunks: ['page-b', 'Page/A']
     })
     , new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
