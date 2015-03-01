@@ -5,4 +5,6 @@ define(['Module/B', 'Component/C'], function(ModuleB, ComponentC) {
   });
 
   (new ComponentC()).sing(new ModuleBB());
+
+  module.exports = ModuleBB;
 });
