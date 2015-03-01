@@ -1,4 +1,4 @@
-define(['Module/Abstract'], function(ModuleAbstract) {
+define(['Module/Abstract', 'Component/C.less'], function(ModuleAbstract) {
 
   module.exports = ModuleAbstract.extend({
     /**

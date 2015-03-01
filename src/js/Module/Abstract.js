@@ -1,4 +1,4 @@
-define(['backbone'], function(backbone) {
+define(['backbone', 'Module/Abstract.less'], function(backbone) {
 
   /**
    * @class ModuleAbstract

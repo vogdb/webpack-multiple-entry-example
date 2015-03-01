@@ -1,4 +1,5 @@
 define(function(require) {
+  require('Page/clicks.less');
   $('#page-a').click(function() {
     require('bundle!Page/A')
   });

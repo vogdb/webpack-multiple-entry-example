@@ -16,7 +16,7 @@ module.exports = {
     'page-b-b': ['Page/B-B.js']
   },
   resolve: {
-    modulesDirectories: ['vendor', 'src/js', 'node_modules']
+    modulesDirectories: ['vendor', 'src/js', 'src/styles', 'node_modules']
   },
   plugins: [
     new webpack.ProvidePlugin({
@@ -38,6 +38,14 @@ module.exports = {
       chunks: ['page-clicks', 'page-module']
     })
   ],
+  module: {
+    loaders: [
+      {
+        test: /\.less$/,
+        loader: "style-loader!css-loader!less-loader"
+      }
+    ]
+  },
   output: {
     path: buildOutputPath,
     filename: '[name].js',
