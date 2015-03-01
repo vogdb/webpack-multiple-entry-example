@@ -7,9 +7,17 @@
     width: 200px;
     height: 60px;
 
-    .title {
-      &:after {
+    .content {
+      &:before {
         color: @PageDefaultColor;
+      }
+
+      &:after {
+        content: '';
+        display: inline-block;
+        background-size: contain;
+        width: 56px;
+        height: 56px;
       }
     }
   }

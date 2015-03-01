@@ -40,7 +40,9 @@ module.exports = {
       {
         test: /\.less$/,
         loader: "style-loader!css-loader!less-loader"
-      }
+      },
+      //3064 is set to show you how an image can be inlined into output entry. See BB.jpg.
+      {test: /\.(png|jpg)$/, loader: 'url-loader?limit=3064'}
     ]
   },
   output: {

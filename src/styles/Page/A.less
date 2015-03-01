@@ -3,7 +3,11 @@
 .Page {
   background-color: @PageA_BgColor;
 
-  .content:after {
+  .content:before {
     content: 'PageA';
+  }
+
+  .content:after {
+    background-image: url("../../../src/img/A.jpg");
   }
 }
