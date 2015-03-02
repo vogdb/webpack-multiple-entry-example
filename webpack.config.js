@@ -13,7 +13,7 @@ module.exports = {
     'page-clicks': ['Page/clicks.js']
   },
   resolve: {
-    modulesDirectories: ['vendor', 'src/js', 'src/styles', 'node_modules']
+    modulesDirectories: ['vendor', 'src/js', 'src/styles', 'src/img', 'node_modules']
   },
   plugins: [
     new webpack.ProvidePlugin({

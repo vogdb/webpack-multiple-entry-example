@@ -8,3 +8,4 @@ This is just an example of webpack conf for multiple-entries.
 
 ### Notes
 1. Hack around entry. I had to wrap them into arrays to deal with the bug "dependency to an entry point is not allowed" https://github.com/webpack/webpack/issues/300.
+2. Pay attention to how the images url are put inside `.less` files. The details are here https://github.com/webpack/css-loader#usage.
