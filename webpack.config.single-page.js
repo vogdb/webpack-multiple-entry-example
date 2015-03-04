@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 var rimraf = require('rimraf');
 
-var buildOutputPath = path.join(__dirname, 'build/static');
+var buildOutputPath = path.join(__dirname, 'build/single-page/static');
 rimraf.sync(buildOutputPath);
 
 
@@ -48,6 +48,6 @@ module.exports = {
   output: {
     path: buildOutputPath,
     filename: '[name].js',
-    publicPath: path.join(__dirname, 'build/static/')
+    publicPath: path.join(buildOutputPath, '/')
   }
 };

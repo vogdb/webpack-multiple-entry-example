@@ -7,7 +7,9 @@
     "url": "git@github.com:cargomedia/webpack-multiple-entry-example.git"
   },
   "scripts": {
-    "build": "webpack --config ./webpack.config.js"
+    "build": "npm run build-multiple && npm run build-single",
+    "build-multiple": "webpack --config ./webpack.config.multiple-page.js",
+    "build-single": "webpack --config ./webpack.config.single-page.js"
   },
   "author": "cargomedia",
   "dependencies": {
