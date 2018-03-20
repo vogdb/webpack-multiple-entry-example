@@ -12,7 +12,7 @@ This is just an example of webpack conf for multiple-entries.
 
 # Webpack for dummies.
 
-When I was reading the webpack docu, I felt myself as the dumbest person ever to live. That is why I decided to write this small tutorial where I will decompose the principles of webpack.
+When I was reading the webpack docu, I felt as the dumbest person ever to live. That is why I decided to write this small tutorial where I will decompose the principles of webpack.
 
 1. Webpack is a module bundler(packaging tool) for all your static files. All. Even font files.
 2. Webpack is distributed as an npm package, so in your project you still need to have a package.json file with a dependency to webpack. I prefer to have it as a dev one. Of course, you choose another way. You can have it without the package.json file and don't install it into your local project. You can install it globally, but still as the npm package, and use it in your Composer, Maven, etc. project as a bash script. But IMO it is a not clear and not easy portable method. 
